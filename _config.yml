@@ -1,9 +1,10 @@
 title: Blog Tech SchoolMouv
 description: Blog technique de l'équipe de développement de SchoolMouv
 
-baseurl: ""
-paginate_path: "/blog/page:num/"
-permalink: blog/:title/
+url: https://Schoolmouv-team.github.io/blog
+baseurl: "/blog"
+paginate_path: "/page:num"
+permalink: /:title
 
 markdown: kramdown
 highlighter: rouge
