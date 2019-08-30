@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
@@ -65,4 +65,4 @@ DEPENDENCIES
   support-for
 
 BUNDLED WITH
-   1.16.5
+   1.17.2

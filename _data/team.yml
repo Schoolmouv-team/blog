@@ -1,0 +1,34 @@
+- name: Alex
+  github: fake
+  job: CTO
+  photo: alex.jpg
+
+- name: Juliane
+  github: Tactless7
+  job: Dev Fullstack Javascript
+  photo: juju.jpg
+
+- name: Val
+  github: fake
+  job: Dev Fullstack Javascript
+  photo: val.jpg
+
+- name: Lulu
+  github: fake
+  job: Dev Fullstack Javascript
+  photo: lulu.jpg
+
+- name: Anaïs
+  github: fake
+  job: Dev Fullstack Javascript
+  photo: anais.jpg
+
+- name: Pierre
+  github: fake
+  job: Architecte Cloud
+  photo: pierre.jpg
+
+- name: Julien
+  github: fake
+  job: Product Owner
+  photo: julien.jpg

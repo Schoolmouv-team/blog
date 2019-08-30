@@ -8,9 +8,22 @@ layout: default
       </div>
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
+  
+  <!-- FIX For French Date -->
+  <p class="meta">{% assign dy = page.date | date: "%a" %}{% case dy %}{% when "Mon" %}Lundi{% when "Tue" %}Mardi{% when "Wed" %}Mercredi{% when "Thu" %}Jeudi{% when "Fri" %}Vendredi{% when "Sat" %}Samedi{% when "Sun" %}Dimanche{% else %}{{ dy }}{% endcase %}
+  {% assign d = page.date | date: "%-d"  %}{% case d %}{% when '1' %}{{ d }}er{% else %}{{ d }}{% endcase %}
+  {% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janvier{% when '2' %}février{% when '3' %}mars{% when '4' %}avril{% when '5' %}mai{% when '6' %}juin{% when '7' %}juillet{% when '8' %}août{% when '9' %}septembre{% when '10' %}octobre{% when '11' %}novembre{% when '12' %}décembre{% endcase %}
+  {{ page.date | date: '%Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute(s) de Lecture</p>
   
   {{ content }}
+
+  {% if page.author %}
+    <p class="author">
+      <a href="{{'/team' | prepend: site.baseurl }}">
+        {{ page.author }}
+      </a>
+    </p>
+  {% endif %}
 
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
@@ -27,6 +40,16 @@ layout: default
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.next.image }}" alt="">
       {% endif %} 
       </a>
-    {% endif %} 
+    {% endif %}
+
   </div>
 </div>
+
+
+<style>
+
+  .author {
+    text-align: right;
+  }
+
+</style>

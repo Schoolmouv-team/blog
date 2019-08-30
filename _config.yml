@@ -1,10 +1,10 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Blog Tech SchoolMouv
+description: Blog technique de l'équipe de développement de SchoolMouv
 
-url: http://brianmaierjr.github.com/long-haul
-baseurl: ""
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+url: Schoolmouv-team.github.io
+baseurl: "/blog"
+paginate_path: "/page:num/"
+permalink: :title/
 
 markdown: kramdown
 highlighter: rouge
@@ -14,15 +14,11 @@ paginate: 5
 navigation:
   - title: Home
     url: /index.html
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
+  - title: Team
+    url: /team
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-
-google_analytics: "UA-58263416-1"
+  github: Schoolmouv-team
+  twitter: schoolmouv
+  email: contact@schoolmouv.fr
+# google_analytics: "UA-58263416-1"
