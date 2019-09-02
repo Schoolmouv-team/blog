@@ -1,35 +1,43 @@
-![preview Long Haul](/preview.jpg)
+# Tech blog
 
-Long Haul is a minimal jekyll theme built with SASS / GULP / BROWSERSYNC / AUTOPREFIXER and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
-
-If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
-
-#### [View Demo](http://brianmaierjr.com/long-haul)
-
-## Features
-
-- Minimal, Type Focused Design
-- Built with GULP + SASS + BROWSERSYNC + AUTOPREFIXER
-- SVG Social Icons
-- Responsive Nav Menu
-- XML Feed for RSS Readers
-- Contact Form via Formspree
-- 5 Post Loop with excerpt on Home Page
-- Previous / Next Post Navigation
-- Estimated Reading Time for posts
-- Stylish Drop Cap on posts
-- A Better Type Scale for all devices
+This blog use the static site generator Jekyll and the theme Long Haul.
 
 ## Setup
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
-3. Clone it
-4. [Install Bundler](http://bundler.io/)
-5. Run `bundle install`
-6. Install gulp dependencies by running `npm install`
-7. Run Jekyll and watch files by running `bundle exec gulp`
-8. Customize and watch the magic happen!
+1. First you'll have to install [ruby](https://jekyllrb.com/docs/installation/macos/)
+2. `gem install jekyll bundler`
+3. `npm install` to install the dependencies
+4. `bundle install` to install the Gems
+5. `npm run serve` to run the website locally.
+
+## Write an article
+
+Article are stored in `_posts` folder. You must name your article as follow `YY-MM-DD-title.md`.
+The article can be written in markdown (this is the manner to focus on) or in html. If needed, you'll find a cheatSheet [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+On the top of the file, there is an information section as following :
+
+```
+layout: post                        // Do not change that
+title: 'Bienvenue sur notre blog'   // Title of the article
+date: 2019-08-30                    // Writing date
+image: touring.jpg                  // Image associated
+author: Juliane                     // Author written at the end of the article
+```
+
+NB : The image must be put in the `assets/img` folder.
+
+For more informations, you can read the md files in the folder `writing-tools`, it has some additionals infos for using Jekyll.
+
+## Deploy the blog
+
+When the develop branch has been merged into master,
+
+1. Checkout on the gh-pages branch
+2. Update it with master. For example : `git fetch && git reset --hard origin/master`
+3. Push it
+4. That's done !
+   Github will automatically deploy the new version. You can see it [here](https://github.com/Schoolmouv-team/blog/deployments)
 
 ## Site Settings
 
