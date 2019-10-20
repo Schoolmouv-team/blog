@@ -12,6 +12,8 @@ This blog use the static site generator Jekyll and the theme Long Haul.
 
 ## Write an article
 
+**/!\ You must switch to dev mode by commenting prod configuration and uncomment dev one. /!\\**
+
 Article are stored in `_posts` folder. You must name your article as follow `YY-MM-DD-title.md`.
 The article can be written in markdown (this is the manner to focus on) or in html. If needed, you'll find a cheatSheet [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -30,6 +32,8 @@ NB : The image must be put in the `assets/img` folder.
 For more informations, you can read the md files in the folder `writing-tools`, it has some additionals infos for using Jekyll.
 
 ## Deploy the blog
+
+**/!\ You must switch to prod mode by commenting dev configuration and uncomment prod one. /!\\**
 
 When the develop branch has been merged into master,
 
