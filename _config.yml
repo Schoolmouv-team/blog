@@ -1,10 +1,16 @@
 title: Blog Tech SchoolMouv
 description: Blog technique de l'équipe de développement de SchoolMouv
 
+# PROD Config
 url: https://Schoolmouv-team.github.io/blog
 baseurl: "/blog"
 paginate_path: "/page:num"
 permalink: /:title
+
+# DEV Config
+# baseurl: ""
+# paginate_path: "/blog/page:num/"
+# permalink: blog/:title/
 
 markdown: kramdown
 highlighter: rouge
